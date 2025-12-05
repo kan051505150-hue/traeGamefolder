@@ -1,0 +1,59 @@
+html,body{
+  height:100%;
+  margin:0;
+  background:#0c0f14;
+  color:#f2f5f9;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;
+}
+.hud{
+  position:fixed;
+  top:12px;
+  left:12px;
+  display:flex;
+  gap:16px;
+  z-index:10;
+  user-select:none;
+}
+.stat{
+  background:#1a1f29;
+  padding:6px 10px;
+  border-radius:8px;
+  box-shadow:0 1px 0 #0006 inset;
+}
+#game{
+  display:block;
+  margin:64px auto 24px;
+  width:960px;
+  height:540px;
+  background:linear-gradient(#16202e,#0f1620);
+  border:2px solid #2b3648;
+  border-radius:12px;
+  box-shadow:0 10px 30px #0008;
+}
+.overlay{
+  position:fixed;
+  inset:0;
+  display:grid;
+  place-items:center;
+  background:#0c0f1480;
+}
+.overlay.hidden{display:none}
+.modal{
+  background:#141a24;
+  padding:24px;
+  border-radius:12px;
+  border:1px solid #2b3648;
+  box-shadow:0 10px 30px #0008;
+  text-align:center;
+}
+.modal h1{margin:0 0 8px;font-size:28px}
+.modal p{margin:0 0 16px;color:#cfe2ff}
+.modal button{
+  padding:10px 18px;
+  background:#2e6ef7;
+  color:white;
+  border:0;
+  border-radius:8px;
+  cursor:pointer;
+}
+.modal button:hover{background:#235ee0}
